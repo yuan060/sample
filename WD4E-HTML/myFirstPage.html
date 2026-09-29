@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Page</title>
+</head>
+<body>
+
+    Hi from Yuan.
+    This is my first try.
+
+    <main>
+        <h1> Note:</h1>
+            <p>Pesistent!</p>
+            <p>It's all about working smart, not necessarily hard.</p>
+            <p>Practice, practice, practice!</p>
+            <p>Accessiblility!</p>
+        <hr>
+        <h2>HTML的演进历程</h2>
+    
+            <h3>a web of connections (for research)</h3>
+            <ul>
+                <li>HTML is created in 1990 as a way to electronically connect documents via hyperlinks.</li>
+                <li>内容>>形式 -- implies no device-specific markup</li>
+                <li>a common language betweet all platforms</li>
+            </ul>
+
+            <h3> Mosaic (research --> commercial)</h3>
+            <p>In 1993, Mosaic emerged as the first graphical browser.</p>
+
+            <h3>The Browser War</h3>
+            <ul>
+                <li>proprietary tags</li>
+                <li>Other tags that went against the spirit of the orginal tenets of HTML were added, e.g. font, center, etc.</li>
+                <li>Origination of "Best viewed on" messages.（推荐使用……浏览器打开）</li>
+            </ul>
+            <p>This comes back to the idea that no one "runs" the Internet or the Web.（互联网没有单一管理机构）</p>
+        <img src="evolution_of_browsers.png" alt="Evolution of Browsers" width="600"/>
+        <hr>
+        <h1>页面请求的幕后机制</h1>
+        <p>What happens when you type something into the address bar of your browser.</p>
+
+            <h2>client-server relationship</h2>
+                <h3>Server</h3>
+                <ul>
+                    <li>machines that hold all the resources</li>
+                    <li>always connected to the network</li>
+                </ul>
+                <h3>Client</h3>
+                <ul>
+                    <li>machine for personal use</li>
+                    <li>what we are using, e.g. laptops, phone,etc.</li>
+                </ul>
+
+            <h2>Networks(The Internet)</h2>
+                <ul>
+                    <li>LAN - local area network（局域网） - like your office buliding</li>
+                    <li>WAN - wide area network（广域网） - might be a university, where you want be able to share servers across multiple buildings.</li>
+                </ul>
+            
+            <h2>Protocols</h2>
+                <ul>
+                    <li>HTTP - Hypertext Transfer Protocol（超文本传输协议）</li>
+                    <li>HTTPS - a more secure protocol</li>
+                    <li>FTP - File Transfer Protocol（文件传输协议）</li>
+                </ul>
+            
+            <h2>Domain Names（域名）</h2>
+                <ul>
+                    <li>Identifies the entitiy you want to connect to.</li>
+                    <li>Each has different top-level domain, e.g. .edu .com, etc. (determined by ICAAN - Internet Corporation for Assigned Names and Numbers)</li>
+                </ul>
+                <p>*Your domain name is actually mapped to an address. </p>
+            
+            <h2>IP Addresses</h2>
+                <p>XXXX:XXXX:XXXX:XXXX:XXXX:XXXX:XXXX:XXXX > 300 trillion posibilities</p> 
+                <p>Luckily, you don't need to type the full IP address.</p>
+                <p>The DNS(Domain Name Server) will look up the IP address based on the URL(Uniform/Universal Resource Locator - 统一资源定位地址) you type in.</p>
+
+            <h2>Document</h2>
+                <ul>
+                    <li>URLs can specify a specific document.</li>
+                    <li>If no document is specified, the default document（默认文档） is returned.</li>
+                </ul>
+            
+            <h2>The Request</h2>
+                <p>Once the IP address is determined, the browser creats an HTTP request.</p>
+                <p>Lots of hidden information in this request. (headers, cookies, form data, etc)</p>
+            
+            <h2>The Response</h2>
+                <p>The server returns (lots of) files, not "web pages".</p>
+                <p>If the server can't fulfill the request, it will send back files with error codes: 404, 500, etc.</p>
+                <img src="request_response_example.png" alt="What happens when you type an domain name into the address bar" width="50%">
+    </main>
+    <footer>&copy; Dong Yuan 2026</footer>
+
+</body>
+</html>
